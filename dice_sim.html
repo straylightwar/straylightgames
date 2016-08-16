@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>The Straylight Games</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+function rollDice(){
+    var die1 = document.getElementById("die1");
+    var die2 = document.getElementById("die2");
+	var die3 = document.getElementById("die3");
+	var die4 = document.getElementById("die4");
+    var die5 = document.getElementById("die5");
+	var die6 = document.getElementById("die6");
+    var status = document.getElementById("status");
+    var d1 = Math.floor(Math.random() * 6) + 1;
+    var d2 = Math.floor(Math.random() * 6) + 1;
+	var d3 = Math.floor(Math.random() * 6) + 1;
+	var d4 = Math.floor(Math.random() * 6) + 1;
+    var d5 = Math.floor(Math.random() * 6) + 1;
+	var d6 = Math.floor(Math.random() * 6) + 1;
+//    var diceTotal = d1 + d2;
+    die1.innerHTML = d1;
+    die2.innerHTML = d2;
+	die3.innerHTML = d3;
+	die4.innerHTML = d4;
+    die5.innerHTML = d5;
+	die6.innerHTML = d6;
+//    status.innerHTML = "Total "+diceTotal+".";
+    
+}
+
+function Hide1() {
+	document.getElementById("die1").style.visibility = "hidden";
+}
+function Hide2() {
+	document.getElementById("die2").style.visibility = "hidden";
+}
+function Hide3() {
+	document.getElementById("die3").style.visibility = "hidden";
+}
+function Hide4() {
+	document.getElementById("die4").style.visibility = "hidden";
+}
+function Hide5() {
+	document.getElementById("die5").style.visibility = "hidden";
+}
+function Hide6() {
+	document.getElementById("die6").style.visibility = "hidden";
+}
+
+function Show1() {
+	document.getElementById("die1").style.visibility = "visible";
+}
+function Show2() {
+	document.getElementById("die2").style.visibility = "visible";
+}
+function Show3() {
+	document.getElementById("die3").style.visibility = "visible";
+}
+function Show4() {
+	document.getElementById("die4").style.visibility = "visible";
+}
+function Show5() {
+	document.getElementById("die5").style.visibility = "visible";
+}
+function Show6() {
+	document.getElementById("die6").style.visibility = "visible";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="headerfootercontainer">
+<div class="headerfooter">The Straylight Games</div>
+</div>
+
+<div class="itemcontainer">
+  <div class="navmenu"><h3>Navigation:</h3>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="materials.html">Materials to Play</a></li>
+  <li><a href="character.html">Player Character</a></li>
+  <li><a href="actions.html">Actions</a></li>
+  <li><a href="movement.html">Movement</a></li>
+  <li><a href="maps.html">Game Maps</a></li>
+  <li><a href="modifiers.html">Modifier Cards</a></li>
+  <li><a href="about.html">About & Credits</a></li>
+  <li><a href="submit.html">Submit an idea!</a></li>
+  <li><a href="dice_sim.html">Dice Simulator</a></li>
+  <li><a href="site_eval.html">Site Evaluation</a></li>
+</ul>
+
+
+</div>
+  <div class="main">
+  
+<h1>Dice Simulator</h1>
+<h4>Select Dice to Show</h4>
+<button onclick="Hide1()">Hide 1</button>
+<button onclick="Show1()">Show 1</button>
+<br>
+<button onclick="Hide2()">Hide 2</button>
+<button onclick="Show2()">Show 2</button>
+<br>
+<button onclick="Hide3()">Hide 3</button>
+<button onclick="Show3()">Show 3</button>
+<br>
+<button onclick="Hide4()">Hide 4</button>
+<button onclick="Show4()">Show 4</button>
+<br>
+<button onclick="Hide5()">Hide 5</button>
+<button onclick="Show5()">Show 5</button>
+<br>
+<button onclick="Hide6()">Hide 6</button>
+<button onclick="Show6()">Show 6</button>
+<br>
+
+<div id="die1" class="dice">0</div>
+<div id="die2" class="dice">0</div>
+<div id="die3" class="dice">0</div>
+<div id="die4" class="dice">0</div>
+<div id="die5" class="dice">0</div>
+<div id="die6" class="dice">0</div>
+<br><br><br><button onclick="rollDice()">Roll</button>
+<h2 id="status" style="clear:left;"></h2>
+
+
+  
+ 
+ </div>
+</div>
+
+<div class="headerfootercontainer">
+<div class="headerfooter">By: Nicholas Carson - CIS363B</div>
+<img src="images\straylight.png" alt="Straylight Games">
+</div>
+
+
+</body>
+</html>

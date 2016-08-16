@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>The Straylight Games</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<script>
+function myFunction() {
+    document.getElementById("ideaform").reset();
+}
+</script>
+
+<body>
+
+<div class="headerfootercontainer">
+<div class="headerfooter">The Straylight Games</div>
+</div>
+
+<div class="itemcontainer">
+  <div class="navmenu"><h3>Navigation:</h3>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="materials.html">Materials to Play</a></li>
+  <li><a href="character.html">Player Character</a></li>
+  <li><a href="actions.html">Actions</a></li>
+  <li><a href="movement.html">Movement</a></li>
+  <li><a href="maps.html">Game Maps</a></li>
+  <li><a href="modifiers.html">Modifier Cards</a></li>
+  <li><a href="about.html">About & Credits</a></li>
+  <li><a href="submit.html">Submit an idea!</a></li>
+  <li><a href="dice_sim.html">Dice Simulator</a></li>
+  <li><a href="site_eval.html">Site Evaluation</a></li>
+</ul>
+
+
+</div>
+  <div class="main">
+  <h3>Submit a Game Idea!</h3>
+
+ <form id="ideaform" action="thankyou.html" method="post">
+  First Name:
+ <br>
+  <input type="text" name="firstname" value="" required>
+  <br>
+  Last Name:<br>  
+  <input type="text" name="lastname" value="" required>
+  <br>
+  
+<br>
+	<input type="radio" name="ideatype" value="modifiercard" checked>Modifier Card<br>
+	<input type="radio" name="ideatype" value="playercard">Player Card<br>
+	<input type="radio" name="ideatype" value="map">Map Concept<br>
+	<input type="radio" name="ideatype" value="gamemode">Game Mode<br>
+	<input type="radio" name="ideatype" value="other">Other
+<br>
+Type in your idea here:
+<br>
+	<textarea cols="50" rows="4" name="idea" required></textarea>
+  <br>
+    Email Address:
+  <br>
+  <input type="email" name="email address" required>
+  <br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+</form>
+ 
+ </div>
+</div>
+
+<div class="headerfootercontainer">
+<div class="headerfooter">By: Nicholas Carson - CIS363B</div>
+<img src="images\straylight.png" alt="Straylight Games">
+</div>
+
+
+</body>
+</html>
